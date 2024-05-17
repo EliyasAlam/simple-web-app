@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Dynamic Page</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header>
+    <div class="myDiv">Hello Guys</div>
+</header>
+
+<section>
+    <h2>Hello World</h2>
+    <h3>
+        Alphabets
+    </h3>
+    <div th:if="${show}">
+        <ul th:each="item: ${features}">
+            <li th:text="${item}"/>
+        </ul>
+    </div>
+
+    <a href="https://www.google.com" target="_blank">More details</a>
+</section>
+
+<footer>
+    Eliyas Alam
+</footer>
+</body>
+
+</html>
