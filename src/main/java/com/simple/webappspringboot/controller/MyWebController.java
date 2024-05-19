@@ -1,4 +1,4 @@
-package com.simple.webappspringboot;
+package com.simple.webappspringboot.controller;
 
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
